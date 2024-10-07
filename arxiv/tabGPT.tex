@@ -123,7 +123,7 @@ To overcome the limitations of the existing methods described in Section \ref{se
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.95\linewidth]{tabgpt.png}
+    \includegraphics[width=0.95\linewidth]{tabgpt_diagram.pdf}
     \caption{Sketch of the \textsc{tabGPT} method. Externally generated sentence embeddings for dataset or target descriptions, column names or descriptions, and row values for categorical columns are used as inputs to an encoder-only transformer with a simple multi-layer perceptron (MLP) head for numerical predictions. Hereby, embeddings of categorical values are added element-wise and scalar numerical values are multiplied to the corresponding column embeddings for each row. Also, simple positional encodings are added only to distinguish the target embedding from the other inputs.}
     \label{fig:tabGPT}
 \end{figure}
